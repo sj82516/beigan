@@ -1,0 +1,65 @@
+<svg id="圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 934.15 767.15">
+    <title>trans_map</title>
+    <polygon
+            points="135.69 169.77 117.41 231.73 142.01 262.33 138.26 314.75 88.12 343.53 48.62 291.66 50.27 216.22 100.33 110.98 198.89 52.4 284.75 89.68 298.65 145.03 333.24 136.34 347.05 103.46 384.16 87.24 418.03 145.94 387.31 222.8 356.86 224.56 333.97 168.52 303.86 171.67 271.02 199.04 226.03 189.74 199 158.28 135.69 169.77"
+            style="fill:#edd420"/>
+    <polygon
+            points="174.06 404.21 242.66 405.2 318.02 373.05 380.79 307.55 453.31 322.12 480.61 416.7 430.8 475.63 327.65 524.71 226.31 518.33 169.81 497.51 153.19 439.94 174.06 404.21"
+            style="fill:#31c9b3"/>
+    <polygon points="87.67 668.82 156.63 626.69 240.17 670.09 211.98 756.24 95.92 763.31 87.67 668.82"
+             style="fill:#e28d05"/>
+    <polygon points="565.49 94.52 554.08 23.18 675.35 0.35 735.27 52.4 723.86 123.05 633.97 137.32 565.49 94.52"
+             style="fill:#3781ed"/>
+    <polygon points="163.92 597.53 60.07 663.23 2.89 659.28 0 623.73 32.47 565.27 93.62 560.3 163.92 597.53"
+             style="fill:#e28d05"/>
+    <polygon
+            points="932.73 645.24 616.85 646.66 637.4 535.51 697.32 414.11 742.98 351.33 792.91 317.09 814.31 317.09 825.73 341.34 857.11 342.77 869.95 387 905.62 419.81 899.92 491.15 932.73 573.9 932.73 645.24"
+            style="fill:#10bf41"/>
+    <path d="M824.12,719.51H1140S1135.15,800,988.2,800,824.12,719.51,824.12,719.51Z"
+          transform="translate(-207.27 -32.85)" style="fill:#10bf41"/>
+    <path d="M824.12,711.93s37.1-11,89.88-11,68.48,11,124.13,11a490.44,490.44,0,0,0,101.87-11"
+          transform="translate(-207.27 -32.85)" style="fill:none;stroke:#10bf41;stroke-miterlimit:10;stroke-width:5px"/>
+    <path d="M824.12,701.58s37.1-11,89.88-11,68.48,11,124.13,11a490.44,490.44,0,0,0,101.87-11"
+          transform="translate(-207.27 -32.85)" style="fill:none;stroke:#10bf41;stroke-miterlimit:10;stroke-width:5px"/>
+    <text x="-207.27" y="-32.85"/>
+    <text transform="translate(298.69 466.9)" style="font-size:72px;fill:#fff;font-family:PingFang HK">南</text>
+    <text transform="translate(169.44 137.32)" style="font-size:72px;fill:#fff;font-family:PingFang HK">北</text>
+    <text transform="translate(616.85 90.24)" style="font-size:72px;fill:#fff;font-family:PingFang HK">東</text>
+    <text transform="translate(72.73 668.74) rotate(-41.08)" style="font-size:72px;fill:#fff;font-family:PingFang HK">
+        艹
+    </text>
+    <text transform="matrix(0.74, -0.68, 0.68, 0.74, 140.35, 726.91)"
+          style="font-size:72px;fill:#fff;font-family:PingFang HK">呂
+    </text>
+    <circle cx="790.76" cy="359.5" r="15.97" style="fill:#264908"/>
+    <circle cx="858.74" cy="416.13" r="15.97" style="fill:#264908"/>
+    <circle cx="672.36" cy="576.27" r="15.97" style="fill:#264908"/>
+    <text transform="translate(745.26 416.13)" style="font-size:36px;fill:#fff;font-family:PingFang HK">松山</text>
+    <text transform="translate(637.54 628.12)" style="font-size:36px;fill:#fff;font-family:PingFang HK">台中</text>
+    <text transform="translate(820.43 474.05)" style="font-size:36px;fill:#fff;font-family:PingFang HK">基隆</text>
+    <path id="baigan_to_shonshan" d="M484.56,190.14s37.1,194,249.68,122.7S1045,259.26,998,392.34"
+          transform="translate(-207.27 -32.85)" style="fill:none"/>
+    <path id="nangan_to_shonshan" d="M555.89,408.31s122.7-221,315.31-218.17,202.16,95.44,128.9,196.1"
+          transform="translate(-207.27 -32.85)" style="fill:none"/>
+    <path id="juguon_to_nangan" d="M320.48,609.12S137.11,374.31,415.07,449" transform="translate(-207.27 -32.85)"
+          style="fill:none"/>
+    <path id="baigan_to_nangan" d="M422.55,449s-0.77-56.78-102.06-108.58" transform="translate(-207.27 -32.85)"
+          style="fill:none"/>
+    <path id="taimaloon" d="M1066,449S1060.69,160.18,879.63,153,618,340.84,524.17,340.39,390.39,401.06,417.5,449"
+          transform="translate(-207.27 -32.85)" style="fill:none"/>
+    <path id="nangan_to_taichung" d="M879.63,609.12s75.7-227.79-80.5-290.57-235.59,89.76-235.59,89.76"
+          transform="translate(-207.27 -32.85)" style="fill:none"/>
+    <g id="airplane">
+        <polygon
+                points="877.92 30.45 884.61 0 884.61 90.24 862.99 90.24 880.77 80.2 877.05 51.89 835.08 51.89 847.88 37.68 877.92 30.45"
+                style="fill:#0019d4"/>
+        <polygon
+                points="891.31 30.45 884.61 0 884.61 90.24 906.24 90.24 888.46 80.2 892.18 51.89 934.14 51.89 921.35 37.68 891.31 30.45"
+                style="fill:#0019d4"/>
+    </g>
+    <g id="ship">
+        <path d="M1123.14,193.91H1056.2l-13-29.57h25.05V146.42h54.88v17h17.42S1138.65,193.91,1123.14,193.91Z"
+              transform="translate(-207.27 -32.85)" style="fill:#0019d4"/>
+        <text transform="translate(879.46 150.63)" style="font-size:18px;fill:#fff;font-family:PingFang HK">船</text>
+    </g>
+</svg>
