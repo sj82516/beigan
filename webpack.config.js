@@ -1,6 +1,7 @@
-var debug = process.env.NODE_ENV !== "production";
-var webpack = require('webpack');
-var path = require('path');
+const debug = process.env.NODE_ENV !== "production";
+const webpack = require('webpack');
+const path = require('path');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
     context: path.join(__dirname, "src"),
@@ -19,10 +20,11 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                loaders: ['style', 'css', 'sass']
+                loaders: [ "style-loader", "css-loader", 'postcss-loader' ,"sass-loader" ]
             }
         ]
     },
+    postcss: [ autoprefixer({ browsers: ['last 2 versions'] }) ],
     resolve: {
         alias:{
             mydir: path.resolve( __dirname, 'src')
