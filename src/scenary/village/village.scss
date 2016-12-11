@@ -1,0 +1,211 @@
+$dark-font: #00329B;
+$comment-color: #14EE5B;
+$light-color: #31C5FF;
+
+.intro-btn-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10px;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+
+.intro-btn {
+  flex: 1;
+  max-width: 27%;
+  height: 50px;
+  border-radius: 10px;
+  margin: 0 5px;
+
+  font-size: 24px;
+  background-color: white;
+  color: $dark-font;
+
+  text-align: center;
+  line-height: 50px;
+
+  cursor: pointer;
+
+  &:hover {
+    color: $light-color;
+    font-weight: bolder;
+  }
+  &:focus {
+    color: $light-color;
+    font-weight: bolder;
+  }
+
+}
+
+//各村資料顯示
+.intro-detail-section {
+  width: 100%;
+  border: 5px solid white;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 15px;
+
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  @media screen and(max-width: 800px) {
+    display: block;
+  }
+}
+
+//左半部條列店家部分
+.intro-detail-list {
+  flex: 1;
+  position: relative;
+  z-index: 2;
+  &__item {
+    display: block;
+    min-height: 40px;
+    color: white;
+    font-size: 24px;
+    line-height: 40px;
+    cursor: pointer;
+    &:before {
+      content: "・";
+    }
+    &:hover {
+      color: $dark-font;
+    }
+    &:focus {
+      color: $dark-font;
+    }
+
+    @media screen and(max-width: 800px) {
+      display: none;
+      clear: both;
+    }
+
+    &_show{
+      display: block;
+    }
+
+    &_hide{
+      display: none;
+    }
+
+    @media screen and(min-width: 800px) {
+      display: block;
+    }
+  }
+
+  //螢幕縮小，改為dropdown
+  @media screen and(max-width: 800px) {
+    display: inline-block;
+    position:absolute;
+    width: auto;
+    min-height: 40px;
+    background-color: $comment-color;
+    top: 25px;
+    right: 25px;
+  }
+
+  &_show{
+    height:calc(100% - 50px);
+  }
+
+  &_hide{
+    height: auto;
+  }
+}
+
+//下拉選單
+.intro-detail-list__dropdown-item{
+  display: none;
+  color: white;
+  z-index: 2;
+  min-width: 60px;
+  min-height: 60px;
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 60px;
+
+  position: relative;
+  float: right;
+  transition: all 0.5s ease;
+
+  &:before{
+    content:"－";
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    transition: all 0.5s ease;
+  }
+
+  &:after{
+    content:"－";
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition: all 0.5s ease;
+  }
+
+  @media screen and(max-width: 800px) {
+    display: inline-block;
+  }
+  &_show{
+    color:$comment-color;
+
+    &:before{
+      transform-origin: 50% 60%;
+      transform: translateY(10px) rotateZ(45deg) scale(1.2);
+      left:3px;
+      color:white;
+    }
+
+    &:after{
+      transform-origin: 50% 50%;
+      transform: translateY(-10px) rotateZ(-45deg) scale(1.2);
+      left:3px;
+      color:white;
+    }
+  }
+
+  &_hide{
+    color:white;
+  }
+}
+
+//右半邊的圖片部分
+.intro-detail-img {
+  flex: 3;
+  border: 5px solid $comment-color;
+  background-color: $comment-color;
+  box-sizing: border-box;
+  &__img {
+    width: 100%;
+    height: 450px;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__comment {
+    overflow: auto;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    &:before {
+      content: "註";
+      color: rgb(51, 51, 51);
+      font-size: 40px;
+      border: 3px solid rgb(51, 51, 51);
+      padding: 5px;
+      box-sizing: border-box;
+      float: left;
+      margin-right: 10px;
+    }
+  }
+
+  @media screen and(max-width: 800px) {
+    display: block;
+    width: 100%;
+    min-height: 40px;
+  }
+}

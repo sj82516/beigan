@@ -1,0 +1,121 @@
+$nav-height: 70px;
+
+.nav-list {
+  //水平垂直置中
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+  max-width: 75%;
+  min-width: 800px;
+  min-height: $nav-height;
+
+  margin: 0 auto;
+  margin-top: 18px;
+  color: white;
+  @media screen and (max-width: 800px){
+    min-width: 100%;
+  }
+}
+
+.nav-list-item {
+  flex: auto;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  &__logo {
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-right: 40%;
+
+    font-size: 36px;
+    transition: all 1s ease;
+    &-icon {
+      width: $nav-height;
+      height: 100%;
+      margin-right: 25px;
+    }
+    //Logo帽子會移動
+    @keyframes rotate-hat {
+      from {
+        transform: rotate(0deg);
+        transform-origin: 100% 0;
+      }
+      to {
+        transform: rotate(10deg) translateY(-3px);
+      }
+    }
+    #logo-hat {
+      transform-origin: 100% 0%;
+      animation: none;
+      @media screen and (max-width: 800px){
+        animation: rotate-hat 0.2s ease 0.1s 6 alternate;
+      }
+    }
+    &:hover #logo-hat {
+      animation: rotate-hat 0.3s ease 0.1s infinite alternate;
+    }
+
+    //logo face擺動
+    @keyframes rotate-face {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: translateY(4px);
+      }
+    }
+    #logo-face {
+      transform-origin: 100% 0;
+      animation: none;
+      @media screen and (max-width: 800px){
+        animation: rotate-face 0.2s ease 0.1s 6 alternate;
+      }
+    }
+    &:hover #logo-face {
+      animation: rotate-face 0.3s ease 0.1s infinite alternate;
+    }
+
+    //logo text focused也要有白底線
+    &:focus > .nav-list-item__text::before {
+      width: 80%;
+    }
+    &:hover > .nav-list-item__text::before {
+      width: 80%;
+    }
+
+    @media screen and (max-width: 800px){
+      width: 100%;
+      margin-right: 0;
+      justify-content: center;
+    }
+  }
+
+  //hover文字出現白色底線動畫
+  &__text {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      bottom: -10px;
+      left: calc(10%);
+      transition: width 1s ease;
+      border-bottom: 3px solid white;
+    }
+
+    &:hover::before {
+      width: 80%;
+    }
+
+    &:focus::before {
+      width: 80%;
+    }
+  }
+}

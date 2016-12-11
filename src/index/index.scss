@@ -1,0 +1,40 @@
+$green-color: #14EE5B;
+
+.beigan-google-map{
+  pointer-events: none;
+}
+
+.specialty{
+  margin-top: 15px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+
+  @media screen and(max-width: 1200px){
+    display: block;
+  }
+}
+
+.specialty-column{
+  flex:1;
+
+  background-color: $green-color;
+  margin: 10px 15px;
+  padding: 2px 10px;
+  box-sizing: border-box;
+  &__title{
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    box-sizing: border-box;
+  }
+
+  &__intro{
+    padding-left: 4px;
+    line-height: 25px;
+  }
+  @media screen and(max-width: 800px){
+    width:auto;
+  }
+}

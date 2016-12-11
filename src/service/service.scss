@@ -1,0 +1,20 @@
+.service-section-anchor-list{
+  position: fixed;
+  top: calc(50% - 100px);
+  right:20px;
+  z-index: 10;
+  &__item{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #ff6633;
+    border-radius: 20px;
+
+    margin-bottom: 5px;
+    line-height: 40px;
+    text-align: center;
+  }
+  @media screen and(max-width: 800px){
+    right:10px;
+  }
+}

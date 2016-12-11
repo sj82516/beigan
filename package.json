@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --content-base . --inline --hot",
     "prod": " NODE_ENV=production webpack -p",
     "prod:firebase": "npm run prod && gulp && firebase deploy",
-    "prod:gh-page": "npm run prod && git push origin master"
+    "prod:gh-page": "npm run prod && git add . && git commit -m 'update' && git push origin master"
   },
   "keywords": [],
   "author": "",

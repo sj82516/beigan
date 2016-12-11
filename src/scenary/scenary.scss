@@ -1,0 +1,60 @@
+$bg: #F9EB44;
+$dark-font: #00329B;
+
+.scenary-section{
+  padding: 0 10px;
+}
+
+.local-map{
+  width: 100%;
+  border: 10px solid $bg;
+  background-color: #F9EB44;
+  box-sizing: border-box;
+  @media screen and(max-width: 800px){
+    padding: 0;
+    border-width: 5px;
+  }
+}
+
+.local-map-img{
+  width:100%;
+  height: auto;
+  background-color: white;
+
+  padding:20px 20%;
+  box-sizing: border-box;
+
+  @media screen and(max-width: 800px){
+    padding: 10px;
+
+  }
+}
+.local-map-nav{
+  min-height: 50px;
+  font-size: 32px;
+  background-color: $bg;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  &__item{
+    flex:1;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+
+    &:hover{
+      color:black;
+    }
+    &:focus{
+      color:black;
+    }
+    @media screen and(max-width: 800px){
+      flex-basis: 33%;
+      font-size: 24px;
+      margin: 10px 0;
+    }
+  }
+}
